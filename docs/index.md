@@ -101,12 +101,16 @@ Tijdens JOTA kun je je radio op een van de frequenties uit de tabel zetten en me
 
 **Opdracht:** Vind mogelijk callsigns en frequenties waarop jij andere scouts hebt gehoord. 
 
-### Demo-GPX-route
-Hieronder zie je een voorbeeld van hoe een GPX-route met communicatievragen en puzzelstukjes eruit kan zien. De coördinaten zijn alleen voor deze demonstratie: gebruik deze route niet om te navigeren.
+### Opdracht: JOTI-bospuzzel
+Werk samen in een team en kraak de geheime zin! De zin bestaat uit zes woorden. Bij elk van de zes punten op de kaart hangt in het bos een kaartje met een gecodeerd woord. Elk woord is gemaakt met een andere communicatiemethode, bijvoorbeeld morsecode, ASCII, semafoor, het NAVO-spellingsalfabet of een cijfercode.
 
-<div class="gpx-demo-map" data-gpx="assets/demo-communication-route.gpx" role="region" aria-label="Kaart met de demo-GPX-route"></div>
+Gebruik de kaart op deze website om de zes plekken te vinden. Ga naar elk punt, bekijk het kaartje en schrijf de code over. Je hoeft de codes niet in het bos te ontcijferen: verzamel ze eerst allemaal en ga daarna terug naar het gebouw. Daar gebruik je een computer en de informatie op deze website om de codes te ontcijferen en de zes woorden in de juiste volgorde te zetten.
 
-Bij elk vraagteken staat een communicatievraag. De antwoorden leveren vier puzzelstukjes op: **DIGI**, **TAL**, **PHYSI** en **CAL**. Zet ze in de juiste volgorde om de themawoorden te vormen.
+Het eerste team dat alle woorden heeft ontcijferd en de zin goed heeft samengesteld, wint. Blijf bij je team en volg de aanwijzingen van de staf. Je kunt de [GPX-route downloaden](assets/route.gpx) en openen in een route-app.
+
+<div class="gpx-route-map" data-gpx="assets/route.gpx" role="region" aria-label="Kaart met de zes plekken van de communicatiepuzzel"></div>
+
+De kaart toont de zes gemarkeerde plekken. Het GPX-bestand bevat geen opgenomen tracklijn en verbindt de punten daarom niet automatisch.
 
 <!-- ### Opdracht: Internationale vragen?
 Zoek een scout uit een land waarmee je wilt chatten. Vraag aan deze scout bij welke scouting hij zit en van welk land hij is. Hoe verder weg deze scout zich van jou bevindt hoe meer punten er beschikbaar komen. Schrijf deze locatie dus `scouting+land` goed op het antwoorden vel. Schrijf ook het antwoord van de vraag op, op het antwoord vel. Vraag dan maximaal 5 vragen aan deze scout. Probeer dus niet zo snel mogelijk door al je vragen heen te zijn want anders kom je zometeen een scout tegen die verder weg is en heb je dus punten laten liggen. 

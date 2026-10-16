@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".gpx-demo-map").forEach(async (element) => {
+  document.querySelectorAll(".gpx-route-map").forEach(async (element) => {
     if (typeof L === "undefined") {
-      element.textContent = "De kaart kan niet worden geladen. Controleer de internetverbinding.";
+      showGpxDownload(element, "De kaart kan niet worden geladen. Je kunt het GPX-bestand downloaden.");
       element.classList.add("gpx-map-error");
       return;
     }
@@ -23,37 +23,60 @@ document.addEventListener("DOMContentLoaded", () => {
         throw new Error("Het GPX-bestand bevat ongeldige XML");
       }
 
-      const points = [...xml.querySelectorAll("trkpt")].map((point) => [
+      const trackPoints = [...xml.querySelectorAll("trkpt")].map((point) => [
         Number(point.getAttribute("lat")),
         Number(point.getAttribute("lon")),
-      ]);
-      if (points.length < 2 || points.some((point) => point.some((coordinate) => !Number.isFinite(coordinate)))) {
-        throw new Error("Het GPX-bestand bevat geen geldige track");
-      }
-
-      const track = L.polyline(points, { color: "#1565c0", weight: 5 }).addTo(map);
-      xml.querySelectorAll("wpt").forEach((waypoint) => {
-        const position = [
+      ]).filter(isValidPosition);
+      const waypoints = [...xml.querySelectorAll("wpt")].map((waypoint) => ({
+        element: waypoint,
+        position: [
           Number(waypoint.getAttribute("lat")),
           Number(waypoint.getAttribute("lon")),
-        ];
-        if (position.some((coordinate) => !Number.isFinite(coordinate))) {
-          return;
-        }
-
+        ],
+      })).filter(({ position }) => isValidPosition(position));
+      const routeLayer = L.featureGroup().addTo(map);
+      if (trackPoints.length > 1) {
+        L.polyline(trackPoints, { color: "#1565c0", weight: 5 }).addTo(routeLayer);
+      }
+      waypoints.forEach(({ element: waypoint, position }) => {
         const name = waypoint.querySelector("name")?.textContent ?? "Vraag";
         const description = waypoint.querySelector("desc")?.textContent ?? "";
-        L.marker(position).addTo(map).bindPopup(
+        L.marker(position).addTo(routeLayer).bindPopup(
           `<strong>${escapeHtml(name)}</strong><br>${escapeHtml(description)}`,
         );
       });
-      map.fitBounds(track.getBounds(), { padding: [24, 24] });
+      if (routeLayer.getLayers().length === 0) {
+        throw new Error("Het GPX-bestand bevat geen geldige routepunten");
+      }
+      map.fitBounds(routeLayer.getBounds(), { padding: [24, 24] });
     } catch (error) {
-      console.error("Demo-GPX-kaart kon niet worden weergegeven:", error);
-      element.innerHTML = '<p class="gpx-map-error">De demo-route kon niet worden geladen. Je kunt het <a href="assets/demo-communication-route.gpx">GPX-bestand hier downloaden</a>.</p>';
+      console.error("GPX-route kon niet worden weergegeven:", error);
+      showGpxDownload(element, "De GPX-route kon niet op de kaart worden weergegeven.");
     }
   });
 });
+
+function isValidPosition([latitude, longitude]) {
+  return Number.isFinite(latitude)
+    && Number.isFinite(longitude)
+    && latitude >= -90
+    && latitude <= 90
+    && longitude >= -180
+    && longitude <= 180
+    && (latitude !== 0 || longitude !== 0);
+}
+
+function showGpxDownload(element, message) {
+  const paragraph = document.createElement("p");
+  paragraph.className = "gpx-map-error";
+  paragraph.append(`${message} `);
+
+  const link = document.createElement("a");
+  link.href = element.dataset.gpx;
+  link.textContent = "Download het GPX-bestand.";
+  paragraph.append(link);
+  element.replaceChildren(paragraph);
+}
 
 function escapeHtml(value) {
   return value.replace(/[&<>"']/g, (character) => ({
