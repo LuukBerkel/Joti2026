@@ -2,7 +2,7 @@
 hide:
   - navigation
 ---
-# JOTI 2025
+# JOTI 2026
 ## Wat is een Jamboree?
 Een **jamboree** is een groot evenement waarbij scouts van over de hele wereld samenkomen. Tijdens een jamboree leer je nieuwe mensen kennen, doe je leuke activiteiten en ontdek je andere culturen. Er zijn verschillende soorten jamborees, zoals de Wereldjamboree, maar ook digitale versies zoals JOTA en JOTI.
 
@@ -10,24 +10,32 @@ Een **jamboree** is een groot evenement waarbij scouts van over de hele wereld s
 - **JOTI** betekent Jamboree On The Internet. Hier gebruiken we het internet om contact te maken met scouts over de hele wereld. Via chats, online spelletjes en opdrachten leer je nieuwe vrienden kennen en ontdek je hoe scouting in andere landen werkt.
 
 Dit jaar doet onze scoutinggroep mee aan de JOTI! 🎉  We gaan samen online praten met andere scouts, leuke uitdagingen doen en plezier maken.
+
+### Het thema van dit jaar: Digital Physical
+Het thema van JOTI dit jaar is **Digital Physical**. Dat betekent dat we digitale middelen gebruiken om samen dingen te beleven die ook met de echte wereld te maken hebben. Via internet kunnen we bijvoorbeeld contact leggen met scouts van een andere scoutinggroep, elkaar vragen stellen en ontdekken hoe scouting er ergens anders uitziet. Met WorldGuessr gebruiken we digitale kaarten en Street View om meer over plekken op de wereld te leren.
+
+Digitaal en fysiek vullen elkaar aan: een videogesprek vindt online plaats, maar we ontmoeten elkaar samen en leren van elkaars ervaringen. Ook kunnen we na een online spel of gesprek verder praten en samenwerken met de mensen om ons heen. Zo helpt technologie ons om contact te maken, nieuwe dingen te ontdekken en samen actief bezig te zijn.
+
 ![plane](assets/plane.png)
 
-## Wat is ScoutLink?
+<!-- ## Wat is ScoutLink?
 ScoutLink is een speciaal netwerk waar scouts met elkaar kunnen chatten. Het is een veilige plek waar je kunt praten met andere scouts, vragen kunt stellen en samen kunt werken aan verschillende opdrachten. Tijdens JOTI gebruiken wij addIRC om met het ScoutLink-netwerk te verbinden! 
 
-Naast het klassieke addIRC zijn er ook moderne manieren om verbinding te maken met ScoutLink, zoals via apps op je telefoon of tablet. Hierdoor kunnen scouts op verschillende manieren contact met elkaar maken, afhankelijk van wat ze het leukst vinden! Maar jullie gaan addIRC gebruiken omdat dat nu op jullie computers staat geinstaleerd.
+Naast het klassieke addIRC zijn er ook moderne manieren om verbinding te maken met ScoutLink, zoals via apps op je telefoon of tablet. Hierdoor kunnen scouts op verschillende manieren contact met elkaar maken, afhankelijk van wat ze het leukst vinden! Maar jullie gaan addIRC gebruiken omdat dat nu op jullie computers staat geinstaleerd. -->
 
 ## Belangrijke regels!
 - **Persoonlijke informatie**: Deel ***nooit*** je volledige naam, adres, telefoonnummer, gebruikersnamen van sociale media of andere persoonlijke informatie in de chat. Dit is belangrijk voor je eigen veiligheid. Gebruik alleen je voornaam of een scoutingnaam.
-- **Gedragsregels**: We gebruiken ***geen*** ongepast taalgebruik of en gaan ook ***niet*** spam versturen. Dit kan er voorzorgen dat de hele scouting geblokeerd wordt het ScoutLink-netwerk. Ben dus beschaaft!
-- **Vraag om hulp**: Als je ergens niet uitkomt of als iets niet goed werkt, vraag dan meteen de staf om hulp. Ze staan klaar om je te helpen met technische problemen of uitleg over AddIRC.
+- **Gedragsregels**: We gebruiken ***geen*** ongepast taalgebruik of en gaan ook ***niet*** spam versturen. 
+<!-- Dit kan er voorzorgen dat de hele scouting geblokeerd wordt het ScoutLink-netwerk. Ben dus beschaaft! -->
 
-## Hoe werkt AddIRC?
+- **Vraag om hulp**: Als je ergens niet uitkomt of als iets niet goed werkt, vraag dan meteen de staf om hulp. Ze staan klaar om je te helpen met technische problemen of uitleg.
+
+<!-- ## Hoe werkt AddIRC?
 AddIRC is een programma waarmee je toegang krijgt tot verschillende chatrooms op het ScoutLink-netwerk. Het is de plek waar je andere scouts kunt ontmoeten en samen opdrachten kunt uitvoeren.
 
 - **Verbinding maken met de server**: De staf zorgt ervoor dat AddIRC automatisch verbinding maakt met de ScoutLink-server. Als de verbinding om wat voor reden dan ook wegvalt, roep dan meteen de staf erbij. Zij kunnen de server opnieuw instellen.
 - **Chatrooms betreden**: Eenmaal verbonden met ScoutLink kun je verschillende chatrooms betreden. De belangrijkste kanalen zijn **#dutch** voor nederlandstalige chats en **#english** voor internationale chats in het Engels.
-- **Privéberichten sturen**: Als je met een specifieke scout apart wilt chatten, kun je op hun naam in de chatroom klikken en hen een persoonlijk bericht sturen. Dit kan handig zijn als je samenwerkt aan een opdracht of vragen hebt.
+- **Privéberichten sturen**: Als je met een specifieke scout apart wilt chatten, kun je op hun naam in de chatroom klikken en hen een persoonlijk bericht sturen. Dit kan handig zijn als je samenwerkt aan een opdracht of vragen hebt. -->
 
 ## Hoe werkt WebSDR?
 **WebSDR** zijn websites waarmee je naar **radiosignalen in de lucht** kunt luisteren, zonder dat je zelf een antenne of ontvanger nodig hebt. Ze laten je veel signalen tegelijk bekijken en beluisteren met je computer.
@@ -93,7 +101,14 @@ Tijdens JOTA kun je je radio op een van de frequenties uit de tabel zetten en me
 
 **Opdracht:** Vind mogelijk callsigns en frequenties waarop jij andere scouts hebt gehoord. 
 
-### Opdracht: Internationale vragen?
+### Demo-GPX-route
+Hieronder zie je een voorbeeld van hoe een GPX-route met communicatievragen en puzzelstukjes eruit kan zien. De coördinaten zijn alleen voor deze demonstratie: gebruik deze route niet om te navigeren.
+
+<div class="gpx-demo-map" data-gpx="assets/demo-communication-route.gpx" role="region" aria-label="Kaart met de demo-GPX-route"></div>
+
+Bij elk vraagteken staat een communicatievraag. De antwoorden leveren vier puzzelstukjes op: **DIGI**, **TAL**, **PHYSI** en **CAL**. Zet ze in de juiste volgorde om de themawoorden te vormen.
+
+<!-- ### Opdracht: Internationale vragen?
 Zoek een scout uit een land waarmee je wilt chatten. Vraag aan deze scout bij welke scouting hij zit en van welk land hij is. Hoe verder weg deze scout zich van jou bevindt hoe meer punten er beschikbaar komen. Schrijf deze locatie dus `scouting+land` goed op het antwoorden vel. Schrijf ook het antwoord van de vraag op, op het antwoord vel. Vraag dan maximaal 5 vragen aan deze scout. Probeer dus niet zo snel mogelijk door al je vragen heen te zijn want anders kom je zometeen een scout tegen die verder weg is en heb je dus punten laten liggen. 
 
 1. **Wat is de meest populaire scoutingactiviteit in jouw land?**
@@ -136,6 +151,7 @@ Zoek een scout uit een land waarmee je wilt chatten. Vraag aan deze scout bij we
 38. **Wat zou je andere scouts adviseren om het meeste uit JOTI te halen?**
 39. **Wat is een typisch spel of activiteit die je graag tijdens JOTI zou willen spelen?**
 40. **Wat is een belangrijk doel dat je wilt bereiken tijdens JOTI?**
+-->
 
 ### Opdracht: Wikipedia zoektocht?
 Zoek de antwoorden op de vragen over scouting en communicatie op Wikipedia door relevante keywords te gebruiken. Typ een paar sleutelwoorden in de zoekbalk in plaats van de volledige vraag om een breder overzicht te krijgen. Lees de artikelen aandachtig en noteer de juiste antwoorden op je antwoordenvel. Vergeet niet om interessante feiten of extra informatie te verzamelen, want dat levert bonus punten op. Noteer altijd de naam van het Wikipedia-artikel, de paragraaf waarin je het antwoord hebt gevonden en het antwoord zelf.
@@ -181,3 +197,21 @@ Neem de tijd voor elke zoekopdracht, zodat je niets mist en misschien kom je zel
 38. **Hoe beïnvloedt technologie de manier waarop scouts met elkaar communiceren?**
 39. **Wat zijn de belangrijkste principes van het Wereldhandvest van Scouting?**
 40. **Wat zijn de verschillende speltakken binnen de scouting?**
+
+### Opdracht: Waar ter wereld?
+Speel [WorldGuessr](https://www.worldguessr.com/) en ontdek hoe goed jij kunt herkennen waar ter wereld je bent. Je wordt op een willekeurige plek in Street View neergezet. Kijk goed om je heen en gebruik aanwijzingen zoals verkeersborden, taal, wegmarkeringen, gebouwen en het landschap om de locatie te achterhalen.
+
+**Wedstrijd:** De staf start een gezamenlijke ronde, zodat iedereen dezelfde locatie krijgt. Verken de omgeving en zet op de kaart de pin op de plek waarvan jij denkt dat je bent. Hoe dichter je bij de juiste plek zit, hoe meer punten je krijgt. Na afloop vergelijken we de scores; degene met de meeste punten wint. Let goed op de details en overleg nog niet met anderen over je gok!
+
+## Communicatie
+Van **12:00 tot 12:30** videobellen we met scouts van een andere scoutinggroep. We maken kennis met elkaar en ontdekken hoe scouting er bij hen uitziet. Zo kunnen we ervaringen uitwisselen en meer leren over andere scoutinggroepen.
+
+Je kunt bijvoorbeeld vragen:
+
+- Bij welke scoutinggroep zitten jullie en waar komen jullie vandaan?
+- Welke activiteiten doen jullie het liefst bij scouting?
+- Hoe ziet een gewone opkomst of een kamp er bij jullie uit?
+- Welke tradities of spellen zijn bijzonder voor jullie groep?
+- Wat is hetzelfde en wat is anders tussen jullie scoutinggroep en die van ons?
+
+Luister goed naar elkaar, stel vragen en vertel ook iets over onze eigen scoutinggroep. Deel tijdens het gesprek geen persoonlijke gegevens zoals je adres of telefoonnummer.

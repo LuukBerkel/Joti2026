@@ -1,7 +1,13 @@
-site_name: JOTI 2025
+site_name: JOTI 2026
 theme:
   language: nl
   name: material
   logo: assets/logo.png
   favicon: assets/favicon.ico
 plugins: []
+extra_css:
+  - https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
+  - assets/gpx-map.css
+extra_javascript:
+  - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js
+  - assets/gpx-map.js
