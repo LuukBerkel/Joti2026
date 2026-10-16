@@ -154,8 +154,24 @@ Zoek een scout uit een land waarmee je wilt chatten. Vraag aan deze scout bij we
 -->
 
 ### Opdracht: Wikipedia zoektocht?
-Zoek de antwoorden op de vragen over scouting en communicatie op Wikipedia door relevante keywords te gebruiken. Typ een paar sleutelwoorden in de zoekbalk in plaats van de volledige vraag om een breder overzicht te krijgen. Lees de artikelen aandachtig en noteer de juiste antwoorden op je antwoordenvel. Vergeet niet om interessante feiten of extra informatie te verzamelen, want dat levert bonus punten op. Noteer altijd de naam van het Wikipedia-artikel, de paragraaf waarin je het antwoord hebt gevonden en het antwoord zelf.
-Neem de tijd voor elke zoekopdracht, zodat je niets mist en misschien kom je zelfs nog iets interessants tegen.
+Zoek de antwoorden op de Nederlandstalige of Engelstalige Wikipedia. Kies hieronder je taal en zoek naar artikelen. Open de artikelen, lees ze zelf en noteer bij ieder antwoord de artikeltitel, de paragraaf en de link. Schrijf je antwoord in het Nederlands, in je eigen woorden, en voeg een kort citaat uit de bron toe. Neem de tijd om de informatie in het artikel terug te vinden.
+
+<form class="wikipedia-search" data-wikipedia-search action="https://nl.wikipedia.org/w/index.php" method="get" target="_blank">
+  <label for="wikipedia-search-language">Taal van Wikipedia</label>
+  <div class="wikipedia-search__controls">
+    <select id="wikipedia-search-language" name="language">
+      <option value="nl">Nederlands</option>
+      <option value="en">English</option>
+    </select>
+    <label class="visually-hidden" for="wikipedia-search-input">Zoekterm</label>
+    <input id="wikipedia-search-input" name="search" type="search" placeholder="Bijvoorbeeld: Morsecode" required>
+    <button type="submit">Zoek</button>
+  </div>
+  <p class="wikipedia-search__status" aria-live="polite"></p>
+  <ul class="wikipedia-search__results"></ul>
+</form>
+
+Noteer bij ieder antwoord de titel van het Wikipedia-artikel, de paragraaf, de URL en het antwoord in je eigen woorden.
 
 1. **In welk jaar werd de Boy Scouts of America opgericht?**
 2. **Wat is de betekenis van het woord "scouting"?**
